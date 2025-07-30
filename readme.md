@@ -18,7 +18,6 @@ Notice the line containing No such file or directory. Next, we need to inform GD
 Now, you can start experimenting with GDB:
 
 ## Common functions
-* Use list . (or l . for short) to view the next portion of code to be executed.
 * Use list (or l for short) to display more of the source code.
 * Use next (or n for short) to execute the next source line. Accept a numerical argument, allowing you to specify the number of lines to skip.
 * Use step (or s for short) to step into a function.
@@ -31,6 +30,8 @@ Now, you can start experimenting with GDB:
 
 ## Breakpoints
 locspec, short for Location Specification - can be provided in various formats, including linenum, filename:linenum, function, or filename:function.
+### List all breakpoints.
+(gdb) info breakpoints
 ### Break on a locspec
 (gdb) break <locspec>
 ### Display a list of all breakpoints, watchpoints, and catchpoints
